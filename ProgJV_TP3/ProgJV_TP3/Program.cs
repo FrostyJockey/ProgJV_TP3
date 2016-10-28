@@ -10,8 +10,11 @@ namespace ProgJV_TP3
     {
         static void Main(string[] args)
         {
+            Random rnd = new Random();
             for (int i = 0; i < 200; i++)
             {
+                int nbAleatoir = rnd.Next(1, 122);
+                Console.WriteLine("nombre aleatoir : {0}", (nbAleatoir));
                 Console.WriteLine("666");
             }
             for (int compteur = 1; compteur <= 200; compteur++)
@@ -20,7 +23,7 @@ namespace ProgJV_TP3
                 {
                     Console.WriteLine("Première moitié");
                 }
-                if (compteur >= 100)
+                if (compteur >= 120)
                 {
                     Console.WriteLine("Deuxième moitié");
                 }
