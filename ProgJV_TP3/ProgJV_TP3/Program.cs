@@ -25,7 +25,7 @@ namespace ProgJV_TP3
                     Console.WriteLine("Deuxième moitié");
                 }
 
-                 Console.WriteLine("eE");
+                 Console.WriteLine(" ");
             }
             Console.WriteLine("Pwet");
             Console.ReadLine();
