@@ -17,7 +17,7 @@ namespace ProgJV_TP3
                 Console.WriteLine("nombre aleatoir : {0}", (nbAleatoir));
                 Console.WriteLine("666");
             }
-            for (int compteur = 1; compteur <= 200; compteur++)
+            for (int compteur = 1; compteur <= (rnd.Next(0, 200)); compteur++)
             {
                 if (compteur < 100)
                 {
@@ -28,7 +28,7 @@ namespace ProgJV_TP3
                     Console.WriteLine("Deuxième moitié");
                 }
 
-                 Console.WriteLine("");
+                 Console.WriteLine(" ");
             }
             Console.WriteLine("Pwet");
             Console.ReadLine();
