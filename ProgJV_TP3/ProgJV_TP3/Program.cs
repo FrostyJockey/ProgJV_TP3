@@ -10,7 +10,11 @@ namespace ProgJV_TP3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("eE");
+            for (int compteur = 1; compteur <= 200; compteur++)
+            {
+                Console.WriteLine("eE");
+            }
+            Console.ReadLine();
         }
     }
 }
