@@ -12,8 +12,17 @@ namespace ProgJV_TP3
         {
             for (int compteur = 1; compteur <= 200; compteur++)
             {
-                Console.WriteLine("eE");
+                if (compteur < 100)
+                {
+                    Console.WriteLine("Première moitié");
+                }
+                if (compteur >= 100)
+                {
+                    Console.WriteLine("Deuxième moitié");
+                }
+
             }
+            Console.WriteLine("Pwet");
             Console.ReadLine();
         }
     }
