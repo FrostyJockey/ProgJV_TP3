@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace ProgJV_TP3
 {
@@ -10,28 +11,16 @@ namespace ProgJV_TP3
     {
         static void Main(string[] args)
         {
-            Random rnd = new Random();
-            for (int i = 0; i < 200; i++)
+            // message qui va afficher: "Aimes-tu les pommes?"
+            string firstSentence = "Aimez-vous les pommes?";
+            char[] motCoupe = firstSentence.ToCharArray();
+            Thread.Sleep(1000);
+            for (int compteur = 0; compteur < motCoupe.Length; compteur++)
             {
-                int nbAleatoir = rnd.Next(1, 122);
-                Console.WriteLine("nombre aleatoir : {0}", (nbAleatoir));
-                Console.WriteLine("666");
+                Console.Write(motCoupe[compteur]);
+                Thread.Sleep(50);
             }
-            for (int compteur = 1; compteur <= (rnd.Next(0, 200)); compteur++)
-            {
-                if (compteur < 100)
-                {
-                    Console.WriteLine("Première moitié");
-                }
-                if (compteur >= 120)
-                {
-                    Console.WriteLine("Deuxième moitié");
-                }
-
-                 Console.WriteLine(" ");
-            }
-            Console.WriteLine("Pwet");
-            Console.ReadLine(); 
-       }
+            Console.ReadLine();
+        }
     }
 }
