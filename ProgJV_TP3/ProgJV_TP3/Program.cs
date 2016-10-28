@@ -31,7 +31,7 @@ namespace ProgJV_TP3
                  Console.WriteLine(" ");
             }
             Console.WriteLine("Pwet");
-            Console.ReadLine();
+            Console.ReadLine(); 
        }
     }
 }
